@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avanti</title>
+    <script type="module" src="/src/main.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <!-- Banner -->
+        <div class="flex bg-[#005CFF] text-white justify-center items-center py-1 font-['Nunito_Sans']">
+            <p class="text-center flex flex-col text-sm items-center sm:flex-row sm:text-base px-4">
+                <span class="flex items-center">Ganhe <span
+                        class="bg-[#6220C1] mx-2 px-2 rounded font-bold">R$10,00</span> de desconto no seu primeiro
+                    pedido.</span>
+                <span class="mt-2 sm:mt-0 sm:ml-1">Utilize o cupom <span
+                        class="text-white font-bold">DESCONTO10</span></span>
+            </p>
+        </div>
+        <!-- Logo e barra de busca -->
+        <div class="flex flex-col lg:flex-row justify-between items-center max-w-7xl mx-auto py-4 px-4 gap-4">
+            <!-- Container para menu, logo e carrinho em mobile -->
+            <div class="flex w-full lg:w-auto items-center justify-between lg:justify-start gap-4">
+                <!-- Menu hambúrguer - visível apenas em mobile -->
+                <button class="flex lg:hidden items-center gap-2 text-[#005CFF] font-semibold" data-mobile-menu-button>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </button>
+                <!-- Logo -->
+                <div class="w-32 lg:w-40">
+                    <img src="/img/cert/logo.png" alt="Logo Avanti" class="w-full">
+                </div>
+                <!-- Carrinho - visível apenas em mobile -->
+                <div class="flex lg:hidden relative">
+                    <img src="/img/carrinho.png" alt="Carrinho" class="w-6 h-6">
+                    <span
+                        class="absolute -top-2 -right-2 bg-[#005CFF] text-white rounded-full w-5 h-5 flex items-center justify-center text-xs">2</span>
+                </div>
+            </div>
+
+            <!-- Barra de busca -->
+            <div class="flex-1 w-full lg:max-w-2xl lg:mx-8">
+                <div class="relative">
+                    <input id="inputBusca" type="text" placeholder="Digite aqui o que você procura"
+                        class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#005CFF]">
+                    <button id="btnBusca" class="absolute right-2 top-1/2 transform -translate-y-1/2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6 text-gray-500">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                        </svg>
+                    </button>
+                </div>
+                <p id="resultadoBusca" class="mt-2 text-blue-600 font-semibold"></p>
+            </div>
+
+            <!-- Perfil e carrinho para desktop -->
+            <div class="hidden lg:flex items-center gap-4">
+                <div class="flex items-center text-sm">
+                    <img src="/img/pesoaa.png" alt="Perfil" class="w-6 h-6">
+                    <div class="ml-2">
+                        <span class="block">Olá,</span>
+                        <span class="block">Nome cliente!</span>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="/img/carrinho.png" alt="Carrinho" class="w-6 h-6">
+                    <span
+                        class="absolute -top-2 -right-2 bg-[#005CFF] text-white rounded-full w-5 h-5 flex items-center justify-center text-xs">2</span>
+                </div>
+            </div>
+        </div>
+        <!-- Menu de Categorias -->
+        <nav class="border-b hidden lg:block">
+            <div class="max-w-7xl mx-auto px-4">
+                <ul class="flex items-center gap-8">
+                    <li class="relative group py-4">
+                        <button class="flex items-center gap-2 text-[#005CFF] font-semibold">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                            </svg>
+                            <span>Todas as Categorias</span>
+                        </button>
+                        <!-- O dropdown será inserido aqui via JavaScript -->
+                    </li>
+                    <li><a href="#" class="text-gray-600 hover:text-[#005CFF]">Departamento</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-[#005CFF]">Departamento</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-[#005CFF]">Departamento</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-[#005CFF]">Departamento</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-[#005CFF]">Departamento</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-[#005CFF]">Departamento</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-[#005CFF]">Departamento</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="relative">
+        <!-- O banner e o carrossel são inseridos aqui via JavaScript -->
+    </main>
+</body>
+
+</html>

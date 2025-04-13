@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Estilização da barra de rolagem */
+.overflow-y-auto {
+    scrollbar-width: thin;
+    scrollbar-color: #005CFF #f3f4f6;
+}
+
+/* Para navegadores WebKit (Chrome, Safari, etc) */
+.overflow-y-auto::-webkit-scrollbar {
+    width: 6px;
+}
+
+.overflow-y-auto::-webkit-scrollbar-track {
+    background: #f3f4f6;
+    border-radius: 3px;
+}
+
+.overflow-y-auto::-webkit-scrollbar-thumb {
+    background-color: #005CFF;
+    border-radius: 3px;
+}
+
+/* Hover na barra de rolagem */
+.overflow-y-auto::-webkit-scrollbar-thumb:hover {
+    background-color: #0046c7;
+}
+
+/* Estilos para o dropdown */
+.departamento-item {
+    position: relative;
+}
+
+.departamento-item:hover {
+    background-color: #f3f4f6;
+}
+
+/* Garantir que o submenu permaneça visível e tenha a mesma altura */
+.group-hover\\/dep\\:block {
+    height: 100%;
+    top: 0;
+}
+
+/* Estilo para o container principal do dropdown */
+.dropdown-container {
+    position: relative;
+}
+
+/* Estilo para o submenu */
+.submenu {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    height: 100%;
+    background-color: white;
+    width: 1000px;
+    /* box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); */
+}
+
+/* Transição suave para os hovers */
+.hover\\:bg-gray-100:hover {
+    transition: all 0.2s ease-in-out;
+}
+
+/* Estilo para a seta do submenu */
+.departamento-item svg {
+    transition: transform 0.2s ease-in-out;
+}
+
+.departamento-item:hover svg {
+    transform: translateX(2px);
+} 
