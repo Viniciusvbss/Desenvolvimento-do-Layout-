@@ -174,35 +174,35 @@ document.addEventListener('DOMContentLoaded', () => {
 // Dados dos produtos
 const productData = [
     {
-        image: '/img/camisa branca.png',
+        image: './img/camisa branca.png',
         title: 'Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing Elit',
         originalPrice: 'R$ 100,00',
         price: 'R$ 79,90',
         installments: '10x de R$ 7,90'
     },
     {
-        image: '/img/camisa branca.png',
+        image: './img/camisa branca.png',
         title: 'Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing Elit',
         originalPrice: 'R$ 100,00',
         price: 'R$ 79,90',
         installments: '10x de R$ 7,90'
     },
     {
-        image: '/img/camisa branca.png',
+        image: './img/camisa branca.png',
         title: 'Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing Elit',
         originalPrice: 'R$ 100,00',
         price: 'R$ 79,90',
         installments: '10x de R$ 7,90'
     },
     {
-        image: '/img/camisa branca.png ',
+        image: './img/camisa branca.png',
         title: 'Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing Elit',
         originalPrice: 'R$ 100,00',
         price: 'R$ 79,90',
         installments: '10x de R$ 7,90'
     },
     {
-        image: '/img/camisa branca.png',
+        image: './img/camisa branca.png',
         title: 'Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing Elit',
         originalPrice: 'R$ 100,00',
         price: 'R$ 79,90',
@@ -257,7 +257,7 @@ function createTopDepartmentDropdown() {
     promoContainer.className = 'mt-auto w-1/3 h-full flex align-middle justify-center';
     
     const promoImage = document.createElement('img');
-    promoImage.src = '/img/imagem do dropdown.png';
+    promoImage.src = './img/imagem do dropdown.png';
     promoImage.alt = 'Confira os Produtos';
     promoImage.className = 'w-236 h-298 object-cover rounded-lg';
 
@@ -360,7 +360,7 @@ function createSubmenu(categorias) {
     promoContainer.className = 'mt-auto w-1/3 h-full flex align-middle justify-center';
     
     const promoImage = document.createElement('img');
-    promoImage.src = '/img/imagem do dropdown.png';
+    promoImage.src = './img/imagem do dropdown.png';
     promoImage.alt = 'Confira os Produtos';
     promoImage.className = 'w-236 h-298    object-cover rounded-lg';
 
@@ -391,16 +391,16 @@ function createSuperSaleBanner() {
     // Source para desktop
     const desktopSource = document.createElement('source');
     desktopSource.media = '(min-width: 1025px)';
-    desktopSource.srcset = '/img/Imagem-Home.png';
+    desktopSource.srcset = './img/Imagem-Home.png';
     
     // Source para mobile
     const mobileSource = document.createElement('source');
     mobileSource.media = '(max-width: 1024px)';
-    mobileSource.srcset = '/img/cert/banner-promocional-mobile.png';
+    mobileSource.srcset = './img/cert/banner-promocional-mobile.png';
     
     // Imagem padrão
     const img = document.createElement('img');
-    img.src = '/img/Imagem-Home.png';
+    img.src = './img/Imagem-Home.png';
     img.alt = 'Super Sale';
     img.className = 'w-full h-full object-cover object-center';
     
@@ -674,7 +674,7 @@ function createContentSection() {
     imageContainer.className = 'w-full lg:w-1/2 bg-[#DEDEDE] mb-8 lg:mb-0';
 
     const image = document.createElement('img');
-    image.src = '/img/caneca-1.png';
+    image.src = './img/caneca-1.png';
     image.alt = 'Caneca Avanti';
     image.className = 'w-full h-full object-contain';
 
@@ -774,7 +774,7 @@ function createSecondContentSection() {
     imageContainer.className = 'w-full lg:w-1/2 mb-8 lg:mb-0 order-1 lg:order-2';
 
     const image = document.createElement('img');
-    image.src = '/img/caneco dois.png';
+    image.src = './img/caneco dois.png';
     image.alt = 'Caneca Avanti';
     image.className = 'w-full h-full object-cover rounded-lg';
 
@@ -800,7 +800,7 @@ function createThirdContentSection() {
     imageContainer.className = 'w-full lg:w-1/2 bg-[#DEDEDE] mb-8 lg:mb-0';
 
     const image = document.createElement('img');
-    image.src = '/img/caneca-1.png';
+    image.src = './img/caneca-1.png';
     image.alt = 'Caneca Avanti';
     image.className = 'w-full h-full object-contain';
 
@@ -935,16 +935,16 @@ function createContactSection() {
     // Source para desktop
     const desktopSource = document.createElement('source');
     desktopSource.media = '(min-width: 1025px)';
-    desktopSource.srcset = '/img/imagem do footer.png';
+    desktopSource.srcset = './img/imagem do footer.png';
     
     // Source para mobile
     const mobileSource = document.createElement('source');
     mobileSource.media = '(max-width: 1024px)';
-    mobileSource.srcset = '/img/cert/footer-mobile.png';
+    mobileSource.srcset = './img/cert/footer-mobile.png';
     
     // Imagem padrão (fallback)
     const img = document.createElement('img');
-    img.src = '/img/imagem do footer.png';
+    img.src = './img/imagem do footer.png';
     img.alt = 'Background';
     img.className = 'w-full h-[330px] object-cover';
     
@@ -987,7 +987,7 @@ function createFooter() {
     logoSection.className = 'mb-8 lg:mb-0 flex flex-col items-center lg:items-start';
 
     const logo = document.createElement('img');
-    logo.src = '/img/cert/avanti.png';
+    logo.src = './img/cert/avanti.png';
     logo.alt = 'Avanti';
     logo.className = 'h-8 mb-6';
 
@@ -1000,7 +1000,7 @@ function createFooter() {
         link.href = '#';
         link.className = 'text-[#005CFF] flex items-center';
         const icon = document.createElement('img');
-        icon.src = `/img/cert/${platform}.png`;
+        icon.src = `./img/cert/${platform}.png`;
         icon.alt = platform;
         icon.className = 'h-[19.01px] w-[19.01px]';
         link.appendChild(icon);
@@ -1136,7 +1136,7 @@ function createFooter() {
     const paymentMethods = ['amex', 'mastercard', 'visa', 'hipercard', 'elo', 'diners', 'paypal', 'pix', 'boleto'];
     paymentMethods.forEach(method => {
         const img = document.createElement('img');
-        img.src = `/img/payment/${method}.png`;
+        img.src = `./img/payment/${method}.png`;
         img.alt = method;
         img.className = 'h-[18px] w-auto';
         paymentContainer.appendChild(img);
@@ -1154,7 +1154,7 @@ function createFooter() {
     const certifications = ['lets-encrypt', 'pci', 'avanti', 'vtex'];
     certifications.forEach(cert => {
         const img = document.createElement('img');
-        img.src = `/img/cert/${cert}.png`;
+        img.src = `./img/cert/${cert}.png`;
         img.alt = cert;
         img.className = 'h-[15px] w-auto';
         certContainer.appendChild(img);
