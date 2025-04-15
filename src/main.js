@@ -207,6 +207,13 @@ const productData = [
         originalPrice: 'R$ 100,00',
         price: 'R$ 79,90',
         installments: '10x de R$ 7,90'
+    },
+    {
+        image: './img/camisa branca.png',
+        title: 'Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing Elit',
+        originalPrice: 'R$ 100,00',
+        price: 'R$ 79,90',
+        installments: '10x de R$ 7,90'
     }
 ];
 
